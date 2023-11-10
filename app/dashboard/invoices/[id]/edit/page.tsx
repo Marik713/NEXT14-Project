@@ -9,10 +9,7 @@ export default async function Page({ params }: { params: { id: string } }) {
     fetchInvoiceById(id),
     fetchCustomers(),
   ]);
-
-  console.log('Invoice', invoice);
   
-
   if (!invoice) {
     notFound();
   }
